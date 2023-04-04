@@ -8,7 +8,7 @@ chat_id = 1303343177
 
 def solution(x: np.array) -> float:
     k = 22
-    return sum( [np.exp(- (x.mean() / k) * i) for i in range(1, k+1)] )
+    return np.exp(- np.sqrt( x.mean() / k))
 
 
 # 1 Условие
