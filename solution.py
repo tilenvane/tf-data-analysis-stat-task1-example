@@ -8,7 +8,7 @@ chat_id = 1303343177
 
 def solution(x: np.array) -> float:
     k = 22
-    return np.exp(- np.sqrt( x.mean() / k))
+    return x.mean() / k
 
 
 # 1 Условие
